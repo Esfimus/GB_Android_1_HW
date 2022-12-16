@@ -7,4 +7,10 @@
     <string name="options">Options:</string>
     <string name="checkbox1">Insurance</string>
     <string name="checkbox2">Extra supplies</string>
+    <string name="name">Name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="phone">Phone</string>
+    <string name="personalID">Personal ID</string>
+    <string name="password">Password</string>
+    <string name="next">Next</string>
 </resources>
