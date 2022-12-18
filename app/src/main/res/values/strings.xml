@@ -1,16 +1,24 @@
 <resources>
-    <string name="app_name">GB Android 1 HW</string>
-    <string name="text01">Destination:</string>
-    <string name="editText01hint">Enter any destination</string>
-    <string name="switch1">Cargo</string>
-    <string name="button1">Teleport</string>
-    <string name="options">Options:</string>
-    <string name="checkbox1">Insurance</string>
-    <string name="checkbox2">Extra supplies</string>
-    <string name="name">Name</string>
-    <string name="e_mail">E-mail</string>
-    <string name="phone">Phone</string>
-    <string name="personalID">Personal ID</string>
-    <string name="password">Password</string>
-    <string name="next">Next</string>
+    <string name="app_name">GBandroid1HW</string>
+    <string name="button_eq">=</string>
+    <string name="button_dot">.</string>
+    <string name="button_0">0</string>
+    <string name="button_1">1</string>
+    <string name="button_2">2</string>
+    <string name="button_3">3</string>
+    <string name="button_plus">+</string>
+    <string name="button_4">4</string>
+    <string name="button_5">5</string>
+    <string name="button_6">6</string>
+    <string name="button_minus">-</string>
+    <string name="button_7">7</string>
+    <string name="button_8">8</string>
+    <string name="button_9">9</string>
+    <string name="button_multi">X</string>
+    <string name="button_ac">AC</string>
+    <string name="button_del">C</string>
+    <string name="button_percent">%</string>
+    <string name="button_div">/</string>
+    <string name="enter_numbers">Enter numbers</string>
+    <string name="result">RESULT</string>
 </resources>

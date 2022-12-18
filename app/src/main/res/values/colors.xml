@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorDayPrimary">#993905</color>
-    <color name="colorDayPrimaryDark">#33180A</color>
-    <color name="colorDayAccent">#E3C935</color>
-    <color name="colorDayBackground">#FEFCFB</color>
-    <color name="colorDayTextPlain">#322F20</color>
-    <color name="colorDayTextHeaders">#322F20</color>
+    <color name="colorDayPrimary">#AEC610</color>
+    <color name="colorDayPrimaryDark">#91A413</color>
+    <color name="colorDayAccent">#84C534</color>
+    <color name="colorDayBackground">#F7F4D4</color>
+    <color name="colorDayTextPlain">#213409</color>
+    <color name="colorDayTextHeaders">#665E00</color>
 
-    <color name="colorNightPrimary">#3D2900</color>
+    <color name="colorNightPrimary">#91A413</color>
     <color name="colorNightPrimaryDark">#000000</color>
     <color name="colorNightAccent">#FFE138</color>
     <color name="colorNightBackground">#000000</color>
-    <color name="colorNightTextPlain">#FCFBF3</color>
-    <color name="colorNightTextHeaders">#F3BE95</color>
+    <color name="colorNightTextPlain">#F7F4D4</color>
+    <color name="colorNightTextHeaders">#CCE524</color>
 </resources>
