@@ -8,6 +8,17 @@
     android:layout_margin="20dp"
     tools:context=".Calculator">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/math1"
+        android:contentDescription="@string/math_image" />
+
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
