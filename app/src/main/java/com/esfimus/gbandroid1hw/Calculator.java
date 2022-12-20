@@ -14,16 +14,4 @@ public class Calculator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculator_main);
     }
-
-    public void showText(View view) {
-        EditText destination = findViewById(R.id.editText01);
-        String destinationText = destination.getText().toString();
-        TextView messageToShow = findViewById(R.id.textMessage);
-        messageToShow.setText(destinationText);
-    }
-
-    public void nextActivity(View view) {
-        Intent intent = new Intent(this, Activity2.class);
-        startActivity(intent);
-    }
 }
