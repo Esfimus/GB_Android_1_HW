@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.GBandroid1HW" parent="Theme.Material3.Dark.NoActionBar">
+    <style name="Theme.GB_Android_1_HW" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/colorNightPrimary</item>
         <item name="colorPrimaryDark">@color/colorNightPrimaryDark</item>

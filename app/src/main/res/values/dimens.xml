@@ -2,9 +2,11 @@
 <resources>
     <dimen name="button_text_size">28sp</dimen>
     <dimen name="enter_number_size">24sp</dimen>
-    <dimen name="result_number_size">80sp</dimen>
+    <dimen name="result_number_size">60sp</dimen>
     <dimen name="button_margin">0dp</dimen>
     <dimen name="button_width">88dp</dimen>
     <dimen name="button_eq_width">160dp</dimen>
     <dimen name="button_height">60dp</dimen>
+    <dimen name="resul_box_size">80dp</dimen>
+    <dimen name="aux_text_box_size">40dp</dimen>
 </resources>

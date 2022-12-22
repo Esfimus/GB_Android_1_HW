@@ -10,10 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GBandroid1HW"
+        android:theme="@style/Theme.GB_Android_1_HW"
         tools:targetApi="31">
         <activity
-            android:name=".Calculator"
+            android:name=".CalculatorActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
