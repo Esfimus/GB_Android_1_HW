@@ -1,7 +1,9 @@
 package com.esfimus.gbandroid1hw;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -51,5 +53,19 @@ public class CalculatorActivity extends AppCompatActivity {
             result.setText(presenter.getResult());
             auxResult.setText(presenter.getSubResult());
         });
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle instanceState) {
+        super.onSaveInstanceState(instanceState);
+        instanceState.putParcelable("Presenter", presenter);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
+        super.onRestoreInstanceState(instanceState);
+        presenter = instanceState.getParcelable("Presenter");
+        result.setText(presenter.getResult());
+        auxResult.setText(presenter.getSubResult());
     }
 }
