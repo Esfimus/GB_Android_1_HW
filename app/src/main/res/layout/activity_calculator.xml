@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
-    tools:context=".Calculator">
+    tools:context=".CalculatorActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -22,26 +22,27 @@
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/resul_box_size"
         android:layout_marginTop="120dp"
-        android:text="@string/result"
         android:textAlignment="viewEnd"
+        android:gravity="center_vertical|end"
         android:textSize="@dimen/result_number_size"
-        app:layout_constraintBottom_toTopOf="@+id/enter_numbers"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/subresult"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/enter_numbers"
+        android:id="@+id/subresult"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="@dimen/aux_text_box_size"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="40dp"
-        android:autofillHints=""
-        android:text="@string/enter_numbers"
         android:textAlignment="viewEnd"
+        android:gravity="center_vertical|end"
         android:textSize="@dimen/enter_number_size"
+        android:autoSizeTextType="uniform"
         app:layout_constraintBottom_toTopOf="@+id/button_ac"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -266,7 +267,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button_7"
         app:layout_constraintEnd_toEndOf="@+id/button_7"
         app:layout_constraintStart_toStartOf="@+id/button_7"
-        app:layout_constraintTop_toBottomOf="@id/enter_numbers"
+        app:layout_constraintTop_toBottomOf="@id/subresult"
         tools:ignore="TextContrastCheck" />
 
     <Button
