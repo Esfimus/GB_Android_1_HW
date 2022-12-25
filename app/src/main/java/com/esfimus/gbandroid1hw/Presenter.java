@@ -2,7 +2,6 @@ package com.esfimus.gbandroid1hw;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
 import androidx.annotation.NonNull;
 
 public class Presenter implements Parcelable {
