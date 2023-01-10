@@ -1,4 +1,4 @@
-package com.esfimus.gbandroid1hw;
+package com.esfimus.gb_calculator_java;
 
 import android.content.Context;
 

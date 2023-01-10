@@ -1,4 +1,4 @@
-package com.esfimus.gbandroid1hw;
+package com.esfimus.gb_calculator_java;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,19 +37,19 @@ public class CalculatorActivity extends AppCompatActivity {
         buttonClickListener(findViewById(R.id.button_9), "9");
         buttonClickListener(findViewById(R.id.button_plus), "+");
         buttonClickListener(findViewById(R.id.button_minus), "-");
-        buttonClickListener(findViewById(R.id.button_multi), "*");
+        buttonClickListener(findViewById(R.id.button_multi), "x");
         buttonClickListener(findViewById(R.id.button_div), "/");
-        buttonClickListener(findViewById(R.id.button_percent), "%");
+        buttonClickListener(findViewById(R.id.button_brackets), "(");
         buttonClickListener(findViewById(R.id.button_dot), ".");
         buttonClickListener(findViewById(R.id.button_eq), "=");
-        buttonClickListener(findViewById(R.id.button_del), "del");
-        buttonClickListener(findViewById(R.id.button_ac), "clear");
+        buttonClickListener(findViewById(R.id.button_del), "d");
+        buttonClickListener(findViewById(R.id.button_ac), "c");
     }
 
     private void buttonClickListener(Button button, String value) {
         button.setOnClickListener(v -> {
             presenter.passValue(value);
-            result.setText(presenter.getResult());
+            result.setText(presenter.getMainResult());
             auxResult.setText(presenter.getSubResult());
         });
     }
@@ -64,7 +64,7 @@ public class CalculatorActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
         super.onRestoreInstanceState(instanceState);
         presenter = instanceState.getParcelable("Presenter");
-        result.setText(presenter.getResult());
+        result.setText(presenter.getMainResult());
         auxResult.setText(presenter.getSubResult());
     }
 }
