@@ -48,230 +48,250 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_0"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_0"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button_1"
         app:layout_constraintStart_toStartOf="@+id/button_1"
         app:layout_constraintTop_toBottomOf="@+id/button_1" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_dot"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_dot"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_0"
         app:layout_constraintEnd_toEndOf="@+id/button_2"
         app:layout_constraintStart_toStartOf="@+id/button_2"
         app:layout_constraintTop_toTopOf="@+id/button_0"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_eq"
         android:layout_width="0dp"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_eq"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_dot"
         app:layout_constraintEnd_toEndOf="@+id/button_plus"
         app:layout_constraintStart_toStartOf="@+id/button_3"
         app:layout_constraintTop_toTopOf="@+id/button_dot" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_1"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_1"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toTopOf="@+id/button_0"
         app:layout_constraintEnd_toStartOf="@+id/button_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_4" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_2"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_2"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_1"
         app:layout_constraintEnd_toStartOf="@+id/button_3"
         app:layout_constraintStart_toEndOf="@+id/button_1"
         app:layout_constraintTop_toTopOf="@+id/button_1" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_3"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_3"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_2"
         app:layout_constraintEnd_toStartOf="@+id/button_plus"
         app:layout_constraintStart_toEndOf="@+id/button_2"
         app:layout_constraintTop_toTopOf="@+id/button_2" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_plus"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_plus"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_3"
         app:layout_constraintTop_toTopOf="@+id/button_3" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_4"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_4"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toTopOf="@+id/button_1"
         app:layout_constraintEnd_toStartOf="@+id/button_5"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_7" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_5"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_5"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_4"
         app:layout_constraintEnd_toStartOf="@+id/button_6"
         app:layout_constraintStart_toEndOf="@+id/button_4"
         app:layout_constraintTop_toTopOf="@+id/button_4" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_6"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_6"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_5"
         app:layout_constraintEnd_toStartOf="@+id/button_minus"
         app:layout_constraintStart_toEndOf="@+id/button_5"
         app:layout_constraintTop_toTopOf="@+id/button_5" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_minus"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_minus"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_6"
         app:layout_constraintTop_toTopOf="@+id/button_6" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_7"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_7"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toTopOf="@+id/button_4"
         app:layout_constraintEnd_toStartOf="@+id/button_8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_ac" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_8"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_8"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_7"
         app:layout_constraintEnd_toStartOf="@+id/button_9"
         app:layout_constraintStart_toEndOf="@+id/button_7"
         app:layout_constraintTop_toTopOf="@+id/button_7" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_9"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_9"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_8"
         app:layout_constraintEnd_toStartOf="@+id/button_multi"
         app:layout_constraintStart_toEndOf="@+id/button_8"
         app:layout_constraintTop_toTopOf="@+id/button_8" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_multi"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_multi"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_9"
         app:layout_constraintTop_toTopOf="@+id/button_9" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_ac"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_ac"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toTopOf="@+id/button_7"
         app:layout_constraintEnd_toEndOf="@+id/button_7"
         app:layout_constraintStart_toStartOf="@+id/button_7"
         app:layout_constraintTop_toBottomOf="@id/subresult" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_del"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_del"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_ac"
         app:layout_constraintEnd_toEndOf="@+id/button_8"
         app:layout_constraintStart_toStartOf="@+id/button_8"
         app:layout_constraintTop_toTopOf="@+id/button_ac" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_percent"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:text="@string/button_percent"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_del"
         app:layout_constraintEnd_toEndOf="@+id/button_9"
         app:layout_constraintStart_toStartOf="@+id/button_9"
         app:layout_constraintTop_toTopOf="@+id/button_del" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_div"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
+        android:ellipsize="end"
         android:text="@string/button_div"
         android:textColor="@color/colorDayTextPlain"
         android:textSize="@dimen/button_text_size"
+        app:cornerRadius="@dimen/button_corner_radius"
         app:layout_constraintBottom_toBottomOf="@+id/button_percent"
         app:layout_constraintEnd_toEndOf="@+id/button_multi"
         app:layout_constraintStart_toStartOf="@+id/button_multi"

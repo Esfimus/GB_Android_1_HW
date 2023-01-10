@@ -8,4 +8,5 @@
     <dimen name="button_height">60dp</dimen>
     <dimen name="resul_box_size">80dp</dimen>
     <dimen name="aux_text_box_size">40dp</dimen>
+    <dimen name="button_corner_radius">16dp</dimen>
 </resources>
