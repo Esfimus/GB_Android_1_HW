@@ -1,8 +1,7 @@
 package com.esfimus.gb_calculator_java;
 
-import android.annotation.SuppressLint;
-
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Objects;
 
 public class Calculations {
@@ -178,14 +177,13 @@ public class Calculations {
     /**
      * Cuts .0 for integer numbers and limits the precision of double to n decimal places
      */
-    @SuppressLint("DefaultLocale")
     public String getNumber() {
         String numberString = String.valueOf(this.result);
         String finalResult = "0";
         if (numberString.matches(".*[.]0")) {
             finalResult = numberString.substring(0, numberString.length() - 2);
         } else if (numberString.matches(".*[.][0-9]{7,}")) {
-            finalResult = String.format("%.7f", this.result);
+            finalResult = String.format(Locale.getDefault(),"%.7f", this.result);
             finalResult = finalResult.replace(",", ".");
         }
         return finalResult;

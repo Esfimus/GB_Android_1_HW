@@ -2,6 +2,8 @@ package com.esfimus.gb_calculator_java;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,6 +17,7 @@ public class CalculatorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(themeChanger());
         setContentView(R.layout.activity_calculator);
 
         clicksAndChanges();
@@ -44,6 +47,12 @@ public class CalculatorActivity extends AppCompatActivity {
         buttonClickListener(findViewById(R.id.button_eq), "=");
         buttonClickListener(findViewById(R.id.button_del), "d");
         buttonClickListener(findViewById(R.id.button_ac), "c");
+
+        findViewById(R.id.imageView).setOnClickListener(v -> {
+            Intent intent = new Intent(this, ThemeActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 
     private void buttonClickListener(Button button, String value) {
@@ -52,6 +61,16 @@ public class CalculatorActivity extends AppCompatActivity {
             result.setText(presenter.getMainResult());
             auxResult.setText(presenter.getSubResult());
         });
+    }
+
+    private int themeChanger() {
+        SharedPreferences pref = getSharedPreferences("key", MODE_PRIVATE);
+        String theme = pref.getString("theme", "green");
+        switch (theme) {
+            case "blue" : return R.style.Blue_theme;
+            case "orange" : return R.style.Orange_theme;
+            default : return R.style.Theme_GB_Calculator_Java;
+        }
     }
 
     @Override

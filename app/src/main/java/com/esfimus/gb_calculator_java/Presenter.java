@@ -254,7 +254,7 @@ public class Presenter implements Parcelable {
         this.mainResult.append(in.readString());
     }
 
-    public static final Creator<Presenter> CREATOR = new Creator<Presenter>() {
+    public static final Creator<Presenter> CREATOR = new Creator<>() {
         @Override
         public Presenter createFromParcel(Parcel in) {
             return new Presenter(in);

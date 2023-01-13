@@ -20,4 +20,9 @@
     <string name="button_brackets">()</string>
     <string name="button_div">/</string>
     <string name="math_image">Math image</string>
+    <string name="change_app_theme">Change app theme:</string>
+    <string name="green_style">Green style</string>
+    <string name="blue_style">Blue style</string>
+    <string name="orange_style">Orange style</string>
+    <string name="save">Save</string>
 </resources>
