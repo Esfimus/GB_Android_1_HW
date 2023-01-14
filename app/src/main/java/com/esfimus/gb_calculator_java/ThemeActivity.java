@@ -8,10 +8,11 @@ import android.widget.Button;
 import android.widget.RadioButton;
 
 public class ThemeActivity extends AppCompatActivity {
-    RadioButton green;
-    RadioButton blue;
-    RadioButton orange;
-    Button save;
+    RadioButton greenButton;
+    RadioButton blueButton;
+    RadioButton orangeButton;
+    Button saveButton;
+    String chosenTheme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,29 +24,31 @@ public class ThemeActivity extends AppCompatActivity {
     }
 
     private void initTheme() {
-        green = findViewById(R.id.radio_green_theme);
-        blue = findViewById(R.id.radio_blue_theme);
-        orange = findViewById(R.id.radio_orange_theme);
-        save = findViewById(R.id.button_save);
+        greenButton = findViewById(R.id.radio_green_theme);
+        blueButton = findViewById(R.id.radio_blue_theme);
+        orangeButton = findViewById(R.id.radio_orange_theme);
+        saveButton = findViewById(R.id.button_save);
 
         pushedButton();
-        radioPush(green, "green");
-        radioPush(blue, "blue");
-        radioPush(orange, "orange");
+        radioPush(greenButton, "green");
+        radioPush(blueButton, "blue");
+        radioPush(orangeButton, "orange");
+        savePush(saveButton);
+    }
 
-        save.setOnClickListener(v -> {
-            Intent intent = new Intent(this, CalculatorActivity.class);
-            startActivity(intent);
+    private void savePush(Button button) {
+        button.setOnClickListener(v -> {
+            SharedPreferences pref = getSharedPreferences("key", MODE_PRIVATE);
+            SharedPreferences.Editor editor = pref.edit();
+            editor.putString("theme", chosenTheme);
+            editor.apply();
             finish();
         });
     }
 
     private void radioPush(RadioButton button, String theme) {
         button.setOnClickListener(v -> {
-            SharedPreferences pref = getSharedPreferences("key", MODE_PRIVATE);
-            SharedPreferences.Editor editor = pref.edit();
-            editor.putString("theme", theme);
-            editor.apply();
+            chosenTheme = theme;
         });
     }
 
@@ -54,15 +57,18 @@ public class ThemeActivity extends AppCompatActivity {
         String theme = pref.getString("theme", "green");
         switch (theme) {
             case "green" : {
-                green.setChecked(true);
+                greenButton.setChecked(true);
+                chosenTheme = "green";
                 return;
             }
             case "blue" : {
-                blue.setChecked(true);
+                blueButton.setChecked(true);
+                chosenTheme = "blue";
                 return;
             }
             case "orange" : {
-                orange.setChecked(true);
+                orangeButton.setChecked(true);
+                chosenTheme = "orange";
             }
         }
     }

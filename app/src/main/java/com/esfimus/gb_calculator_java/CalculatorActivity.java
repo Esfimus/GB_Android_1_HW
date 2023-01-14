@@ -8,11 +8,14 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 public class CalculatorActivity extends AppCompatActivity {
 
     Presenter presenter;
     TextView result;
     TextView auxResult;
+    String startingTheme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +54,6 @@ public class CalculatorActivity extends AppCompatActivity {
         findViewById(R.id.imageView).setOnClickListener(v -> {
             Intent intent = new Intent(this, ThemeActivity.class);
             startActivity(intent);
-            finish();
         });
     }
 
@@ -66,10 +68,21 @@ public class CalculatorActivity extends AppCompatActivity {
     private int themeChanger() {
         SharedPreferences pref = getSharedPreferences("key", MODE_PRIVATE);
         String theme = pref.getString("theme", "green");
+        startingTheme = theme;
         switch (theme) {
             case "blue" : return R.style.Blue_theme;
             case "orange" : return R.style.Orange_theme;
             default : return R.style.Theme_GB_Calculator_Java;
+        }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        SharedPreferences pref = getSharedPreferences("key", MODE_PRIVATE);
+        String theme = pref.getString("theme", "green");
+        if (!Objects.equals(startingTheme, theme)) {
+            recreate();
         }
     }
 
