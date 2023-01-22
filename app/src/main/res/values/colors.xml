@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorDayPrimary">#AEC610</color>
-    <color name="colorDayPrimaryDark">#91A413</color>
-    <color name="colorDayAccent">#84C534</color>
-    <color name="colorDayBackground">#F7F4D4</color>
-    <color name="colorDayTextPlain">#213409</color>
-    <color name="colorDayTextHeaders">#665E00</color>
+    <color name="greenDayPrimary">#AEC610</color>
+    <color name="greenDayPrimaryDark">#91A413</color>
+    <color name="greenDayAccent">#84C534</color>
+    <color name="greenDayBackground">#F7F4D4</color>
+    <color name="greenDayTextPlain">#213409</color>
+    <color name="greenDayOnPrimary">#1B3409</color>
+    <color name="greenNightPrimary">#91A413</color>
+    <color name="greenNightPrimaryDark">#000000</color>
+    <color name="greenNightAccent">#FFE138</color>
+    <color name="greenNightBackground">#000000</color>
+    <color name="greenNightTextPlain">#F7F4D4</color>
+    <color name="greenNightOnPrimary">#CCE524</color>
 
-    <color name="colorNightPrimary">#91A413</color>
-    <color name="colorNightPrimaryDark">#000000</color>
-    <color name="colorNightAccent">#FFE138</color>
-    <color name="colorNightBackground">#000000</color>
-    <color name="colorNightTextPlain">#F7F4D4</color>
-    <color name="colorNightTextHeaders">#CCE524</color>
+    <color name="blueDayPrimary">#3682D9</color>
+    <color name="blueDayPrimaryDark">#0D249C</color>
+    <color name="blueDayAccent">#142371</color>
+    <color name="blueDayBackground">#F2FDF2</color>
+    <color name="blueDayTextPlain">#091034</color>
+    <color name="blueDayOnPrimary">#0E184E</color>
+    <color name="blueNightPrimary">#3682D9</color>
+    <color name="blueNightPrimaryDark">#0D249C</color>
+    <color name="blueNightAccent">#142371</color>
+    <color name="blueNightBackground">#000000</color>
+    <color name="blueNightTextPlain">#F2FDF2</color>
+    <color name="blueNightOnPrimary">#0E184E</color>
+
+    <color name="orangeDayPrimary">#FD9D0D</color>
+    <color name="orangeDayPrimaryDark">#925801</color>
+    <color name="orangeDayAccent">#FEFE33</color>
+    <color name="orangeDayBackground">#FCF6EE</color>
+    <color name="orangeDayTextPlain">#252504</color>
+    <color name="orangeDayOnPrimary">#3B3B0C</color>
+    <color name="orangeNightPrimary">#FD9D0D</color>
+    <color name="orangeNightPrimaryDark">#925801</color>
+    <color name="orangeNightAccent">#FEFE33</color>
+    <color name="orangeNightBackground">#000000</color>
+    <color name="orangeNightTextPlain">#FCF6EE</color>
+    <color name="orangeNightOnPrimary">#3B3B0C</color>
 </resources>

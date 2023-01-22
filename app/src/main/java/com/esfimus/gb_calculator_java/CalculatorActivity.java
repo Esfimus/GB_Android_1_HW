@@ -7,7 +7,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
-
 import java.util.Objects;
 
 public class CalculatorActivity extends AppCompatActivity {

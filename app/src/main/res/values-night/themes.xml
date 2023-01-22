@@ -1,29 +1,27 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
     <style name="Theme.GB_Calculator_Java" parent="Theme.Material3.Dark.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorNightPrimary</item>
-        <item name="colorPrimaryDark">@color/colorNightPrimaryDark</item>
-        <item name="colorAccent">@color/colorNightAccent</item>
-        <item name="android:colorBackground">@color/colorNightBackground</item>
-        <item name="android:textColor">@color/colorNightTextPlain</item>
+        <item name="colorPrimary">@color/greenNightPrimary</item>
+        <item name="colorPrimaryDark">@color/greenNightPrimaryDark</item>
+        <item name="colorAccent">@color/greenNightAccent</item>
+        <item name="android:colorBackground">@color/greenNightBackground</item>
+        <item name="android:textColor">@color/greenNightTextPlain</item>
     </style>
 
     <style name="Blue_theme" parent="Theme.GB_Calculator_Java" >
-        <item name="colorPrimary">#3682D9</item>
-        <item name="colorPrimaryDark">#0D249C</item>
-        <item name="colorAccent">#142371</item>
-        <item name="android:background">@color/colorNightBackground</item>
-        <item name="android:textColor">#F2FDF2</item>
-        <item name="colorOnPrimary">#0E184E</item>
+        <item name="colorPrimary">@color/blueNightPrimary</item>
+        <item name="colorPrimaryDark">@color/blueNightPrimaryDark</item>
+        <item name="colorAccent">@color/blueNightAccent</item>
+        <item name="android:background">@color/blueNightBackground</item>
+        <item name="android:textColor">@color/blueNightTextPlain</item>
+        <item name="colorOnPrimary">@color/blueNightOnPrimary</item>
     </style>
 
     <style name="Orange_theme" parent="Theme.GB_Calculator_Java" >
-        <item name="colorPrimary">#FD9D0D</item>
-        <item name="colorPrimaryDark">#925801</item>
-        <item name="colorAccent">#FEFE33</item>
-        <item name="android:background">@color/colorNightBackground</item>
-        <item name="android:textColor">#FCF6EE</item>
-        <item name="colorOnPrimary">#3B3B0C</item>
+        <item name="colorPrimary">@color/orangeNightPrimary</item>
+        <item name="colorPrimaryDark">@color/orangeNightPrimaryDark</item>
+        <item name="colorAccent">@color/orangeNightAccent</item>
+        <item name="android:background">@color/orangeNightBackground</item>
+        <item name="android:textColor">@color/orangeNightTextPlain</item>
+        <item name="colorOnPrimary">@color/orangeNightOnPrimary</item>
     </style>
 </resources>

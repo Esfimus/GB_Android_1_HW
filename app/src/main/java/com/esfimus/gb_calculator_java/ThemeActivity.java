@@ -1,7 +1,6 @@
 package com.esfimus.gb_calculator_java;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
@@ -47,9 +46,7 @@ public class ThemeActivity extends AppCompatActivity {
     }
 
     private void radioPush(RadioButton button, String theme) {
-        button.setOnClickListener(v -> {
-            chosenTheme = theme;
-        });
+        button.setOnClickListener(v -> chosenTheme = theme);
     }
 
     private void pushedButton() {
